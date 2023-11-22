@@ -304,6 +304,13 @@ img {
   color: var(--first-color);
 }
 
+.icon{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+  width: 30px;
+  height: 30px
+}
 .skills__names {
   display: flex;
   align-items: center;
