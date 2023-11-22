@@ -51,7 +51,7 @@ body{
     color: var(--second-color);
 }
 h1,h2,p{
-    margin: 0;  
+    margin: 0;
 }
 ul{
     margin: 0;
@@ -230,7 +230,7 @@ img{
     color: #fff;
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
-    border-radius: .5rem; 
+    border-radius: .5rem;
     transition: .3s;
 
     &:hover{
@@ -250,7 +250,7 @@ img{
 
     &__img{
         justify-self: center;
-        
+
         & img{
             width: 200px;
             border-radius: .5rem;
@@ -276,7 +276,7 @@ img{
         align-items: center;
         position: relative;
         font-weight: var(--font-semi);
-        padding: .5rem 1rem;
+        padding: .5rem .5rem;
         margin-bottom: var(--mb-4);
         border-radius: .5rem;
         box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -321,10 +321,10 @@ img{
         row-gap: 2rem;
     }
     &__img{
-        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
         border-radius: .5rem;
         overflow: hidden;
-        
+
         & img{
             transition: 1s;
 
@@ -479,7 +479,7 @@ img{
     }
     .home{
         padding: 8rem 0 2rem;
-        
+
         &__img{
             width: 400px;
             bottom: 10%;
