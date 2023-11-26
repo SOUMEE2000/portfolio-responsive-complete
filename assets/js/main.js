@@ -41,6 +41,22 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -53,4 +69,4 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400});
 sr.reveal('.home__social-icon',{ interval: 200});
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 50}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 50});
