@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+:root {
+
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+}
+
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:var(--first-color);;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:var(--first-color);
+  border-radius:50%;
+  /* box-shadow:0 0 0 3px var(--first-color); */
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:var(--first-color);
+  border-radius:50%;
+  box-shadow:0 0 0 3px #a7d4f2;
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color:var(--first-color);
+  font-weight:bold;
+  font-size: 1rem;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+  font-size: 0.75rem;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:0.75rem;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+  background:var(--first-color);;
+  color: #fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px #a7d4f2;
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background:var(--first-color);
+  color: #fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px #a7d4f2;
+}
